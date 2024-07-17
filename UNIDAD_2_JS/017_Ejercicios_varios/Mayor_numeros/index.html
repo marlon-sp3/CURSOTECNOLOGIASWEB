@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor número</title>
+</head>
+
+<body>
+    <div id="resultado"></div>
+
+    <script>
+        window.onload = function(){
+        let numeros = [];
+        let num1 = prompt('Ingresa un número');
+        numeros.push(num1);
+        let num2 = prompt('ingresa otro número');
+        numeros.push(num2);
+
+        if (NaN(num1) && NaN(num2)) {
+            document.write('Debes introducir número válidos');
+        }
+        document.getElementById('resultado').innerHTML = `El primer número introducido es ${num1}, el segundo número es ${num2}, 
+        y el mayor de los dos es ${Math.max(...numeros)}`
+        
+        };
+    </script>
+</body>
+
+</html>

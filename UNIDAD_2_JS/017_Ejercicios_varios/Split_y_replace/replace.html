@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenido">
+
+    </div>
+    <button id="boton" > Click para cambiar palabra</button>
+    <script>
+        let frase = prompt('Introduce una frase de al menos 4 palabras');
+        
+        const contenido = document.getElementById('contenido');
+        contenido.innerHTML = frase;
+        const boton = document.getElementById('boton');
+
+        function prompts() {
+            let palabraSustituir = prompt('Elige la palabra a sustituir');
+            let palabraSustituta = prompt('Elige palabra sustituta');
+
+            let nuevaFrase = frase.replace(palabraSustituir, palabraSustituta);
+            contenido.innerHTML = nuevaFrase;
+            
+        }
+        boton.addEventListener('click', function () {prompts()});
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número mayor</title>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+
+        let num1 = parseInt(prompt('Ingresa un número'));
+        let num2 = parseInt(prompt('ingresa otro número'));
+        let numMayor;
+        if (num1<num2) {
+            document.write(`Has introducido el número ${num1} y el número ${num2}, el mayor de los dos es ${num2}`);
+        }
+        else if (num1>num2) {
+            document.write(`Has introducido el número ${num1} y el número ${num2}, el mayor de los dos es ${num1}`);
+        }
+        else if (num1 == num2) {
+            document.write(`Has introducido el número ${num1} y el número ${num2}, al ser el mismo, no hay uno mayor`);
+        }
+        else {
+            document.write('Debes introducir número válidos');
+        }};
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle Sencillo</title>
+</head>
+<body>
+    <div id="contenido"></div>
+    <script>
+        // Parte A:
+        document.write ('<hr>');
+        for(i=0; i<5; i++) {
+            document.write(i + '<br>');
+        }
+        document.write ('<hr>');
+        // Parte B:
+        for(i=0; i<5; i++) {
+            document.write(i + '<br>');
+            if (i==2){
+                break;
+            }
+            
+        }
+        document.write ('<hr>');
+        // Parte C:
+        for(i=2; i<=20; i+=2) {
+            console.log(i);
+            document.getElementById('contenido').innerHTML = document.getElementById('contenido').innerHTML + i + '<br>';
+        }
+        document.write ('<hr>');
+        //Parte D:
+        let a = 0;
+        for (i=0; i<=100; i++) {
+            a += i;
+            if (i==100) {
+            document.write('La suma de los números del 1 al 100 es: ' + a + '<br>');
+            }
+
+        }
+        document.write('<br>');
+        document.write ('<hr>');
+        // Parte E:
+        for (i=4; i>0; i--) {
+            for (j=i; j>0; j--) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+
+    </script>
+</body>
+</html>
