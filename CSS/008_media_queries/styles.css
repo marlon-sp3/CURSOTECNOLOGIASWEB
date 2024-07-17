@@ -1,0 +1,189 @@
+/* Reset básico */
+body, h1, p, button {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+/* Contenedor flex */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Imagen de perfil */
+.profile-image img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    width:110px
+}
+
+/* Información del perfil */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-name {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.profile-description {
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.profile-button {
+    background-color: hsl(220, 90%, 56%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: hsl(220, 90%, 46%);
+}
+
+/* Media Queries */
+
+/* Móviles (Vertical): Cuando el dispositivo es un móvil que está en posición vertical el color de fondo cambia a rojo, el botón cambia al color turquesa y tiene un ancho máximo de 480px*/
+@media (max-width: 480px) {
+    .profile-card {
+        background-color: #ff6b6b; /* Rojo */
+    }
+    .profile-name {
+        font-size: 1.2rem;
+    }
+    .profile-description {
+        font-size: 0.8rem;
+    }
+    .profile-button {
+        background-color: #4ecdc4; /* Turquesa */
+    }
+}
+
+/* Móviles (Horizontal): Cuando el dispositivo es un móvil que está en posición horizontal el color de fondo cambia a color turquesa, el botón cambia a color amarillo y tiene un ancho mínimo de 481px y máximo de 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .profile-card {
+        background-color: #4ecdc4; /* Turquesa */
+        flex-direction: row;
+        text-align: left;
+    }
+    .profile-image {
+        margin-right: 1rem;
+    }
+    .profile-info {
+        align-items: flex-start;
+    }
+    .profile-button {
+        background-color: #ffe66d; /* Amarillo */
+    }
+}
+
+/* Tabletas (Vertical): Cuando el dispositivo es una tableta en posición vertical el color de fondo cambia a amarillo, el botón cambia a color rojo y tiene un ancho mínimo de 768px y máximo de 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .profile-card {
+        background-color: #ffe66d; /* Amarillo */
+    }
+    .profile-name {
+        font-size: 2rem;
+    }
+    .profile-description {
+        font-size: 1.2rem;
+    }
+    .profile-button {
+        background-color: #ff6b6b; /* Rojo */
+    }
+}
+
+/* Tabletas (Horizontal):Cuando el dispositivo es una tableta en posición horizontal el color de fondo cambia a azul oscuro, el botón cambia a color rojo y tiene un ancho mínimo de 1025px y un máximo de 1279px */
+@media (min-width: 1025px) and (max-width: 1279px) {
+    .profile-card {
+        background-color: #1a535c; /* Azul oscuro */
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .profile-image {
+        margin-right: 2rem;
+    }
+    .profile-info {
+        align-items: flex-start;
+    }
+    .profile-button {
+        background-color: #ff6b6b; /* Rojo */
+    }
+}
+
+/* Desktops: Cuando el dispositivo es un desktop el color de fondo cambia a turquesa, el botón cambia a color amarillo y tiene un ancho mínimo de 1280px y un máximo de 1919px */
+@media (min-width: 1280px) and (max-width: 1919px) {
+    .profile-card {
+        background-color: #4ecdc4; /* Turquesa */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-name {
+        font-size: 2.5rem;
+    }
+    .profile-description {
+        font-size: 1.5rem;
+    }
+    .profile-button {
+        background-color: #ffe66d; /* Amarillo */
+    }
+}
+
+/* Desktops Muy Grandes: Cuando el dispositivo es un desktop muy grande el color de fondo cambia a amarillo, el botón cambia a color azul oscuro y tiene un ancho mínimo de 1920px */
+@media (min-width: 1920px) {
+    .profile-card {
+        background-color: #ffe66d; /* Amarillo */
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .profile-image {
+        margin-right: 2rem;
+    }
+    .profile-info {
+        align-items: flex-start;
+    }
+    .profile-button {
+        background-color: #1a535c; /* Azul oscuro */
+    }
+}
+
+/* Retina */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .profile-card {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .profile-button {
+        border: 2px solid #fff;
+    }
+}

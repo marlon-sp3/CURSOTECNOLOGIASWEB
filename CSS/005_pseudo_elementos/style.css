@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+.cta-button {
+    background-color: black;
+    padding: 5px;
+    border-radius: 5%;
+    border: 2px dotted whitesmoke;
+    color: white;
+    font-size: x-large;
+    
+}
+.cta-button::first-letter{
+    color: green;
+    
+}
+.cta-button:hover::before{
+    content: "!Haz click aquí!";
+    background-color: brown;
+    
+}
+.cta-button:focus::after{
+    content: "Ya has visitado este recurso";
+    color: #fff;
+
+}
+

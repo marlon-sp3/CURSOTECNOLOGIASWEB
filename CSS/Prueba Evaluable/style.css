@@ -1,0 +1,174 @@
+/*Estilos Inicio*/
+body {
+    margin: 0;
+    background-color: #A8D5BB;
+}
+header {
+    color: white;
+    background-color: #A8D5BB;
+    padding: 20px;
+
+}
+nav {
+    background-color: #FAD1D1;
+    padding: 15px;
+    word-spacing: 25px;
+    overflow: hidden;
+    
+}
+a {
+    display:inline-block;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+main {
+    display: flex;
+}
+
+article {
+    flex: 4;
+    background-color: #D4E2DF;
+}
+
+aside {
+    flex: 0.3;
+    padding: 4rem;
+    background-color: #FEF1BA;
+    width: 20px;
+    height: 320px;
+    flex-direction: column;
+}
+.whatsapp, .facebook, .twitter {
+    height: 15%;
+    width: 25%;
+    margin: 10px;
+    float: left;
+    min-width: 40px;
+}
+.logotipo {
+    float: left;
+    height: 5%;
+    width: 5%;
+    margin: 10px;
+}
+footer {
+    background-color: #A8D5BB;
+    text-align: center;
+    
+}
+footer p {
+    color: white;
+    padding: 35px;
+    font-size: large;
+    font-style: bold;
+}
+
+/*Estilos para 'Nosotros'*/
+
+/* Contenedor flex */
+section .profile-card {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background-color: beige;
+    padding: 20px;
+    margin: 0 auto;
+    
+    
+    
+}
+.caja {
+    border: 2px solid black;
+    justify-content: space-between;
+    margin: 1%;
+    background-color: rgb(188, 188, 90);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    width: 30%;
+    min-width: 280px;
+    float: left;
+    
+
+    
+}
+
+/* Imagen de perfil */
+.profile-image img {
+    border-radius: 50%;
+    margin-bottom: 0;
+    width:50px;
+    text-align: center;
+}
+
+/* Información del perfil */
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-name {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.profile-description {
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.profile-button {
+    background-color: hsl(220, 90%, 56%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.profile-button:hover {
+    background-color: hsl(220, 90%, 46%);
+}
+
+@media (max-width: 480px) {
+    aside {
+        visibility: hidden;
+    }
+    article {
+        min-width:100%;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    aside {
+        visibility: hidden;
+    } 
+    article {
+        min-width:100%;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    aside {
+        visibility: hidden;
+    } 
+    article {
+        min-width:100%;
+    }
+}
+
+/* Estilos para contactos*/
+form {
+    display:block;
+}
+.enviar-btn {
+    text-align: center;
+    float: left;
+}
