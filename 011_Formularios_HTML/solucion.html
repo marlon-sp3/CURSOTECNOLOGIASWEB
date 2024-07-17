@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required><br>
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required><br>
+            <label for="genero">Género:</label><br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" required>
+            <label for="masculino">Femenino</label>
+            <input type="radio" id="femenino" name="genero" required>
+            <label for="masculino">Otro</label>
+            <input type="radio" id="otro" name="genero" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            <label for="correo">Dirección de Correo Electrónico:</label>
+            <input type="email" id="correo" required><br>
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" required><br>
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" rows="5" cols="40" required></textarea><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar" style="font-size:large">
+    </form>
+</body>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+    th, td {
+        border: 0.5px solid rgb(195, 192, 192);
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 900;
+        color: white;
+
+    }
+
+    th:hover, td:hover {
+        background-color: rgba(140, 234, 205, 0.8);
+        font-weight: 700;
+
+    }
+
+    th {
+        background-color: rgba(61, 39, 11, 0.3);
+
+    }
+
+    td {
+        background-color: rgb(193, 193, 192, 0.1);
+    }
+
+    body {
+        background-image: URL('https://cdn.thecollector.com/wp-content/uploads/2023/08/chicago-bean-photo-1.jpg?width=1400&quality=70');
+        background-size: cover;
+    }
+</style>
+
+<body>
+
+    <table style="width:100%">
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Contactos</th>
+            <th colspan="2" rowspan="2">Dirección</th>
+
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th style="background-color:white"></th>
+        </tr>
+        <tr>
+            <td>Juan Pérez</td>
+            <td>juan@example.com</td>
+            <td>+34 600 123 456</td>
+            <td rowspan="2" colspan="2">Calle Falsa 123, Madrid </td>
+        </tr>
+        <tr>
+            <td>Ana García</td>
+            <td>ana@example.com</td>
+            <td>+34 600 654 321</td>
+        </tr>
+        <tr>
+            <td>Pedro López</td>
+            <td colspan="2">pedro@example.com</td>
+            <td colspan="2">Avenida Siempre Viva 456, Barcelona</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
